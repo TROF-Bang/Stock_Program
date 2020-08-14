@@ -1,12 +1,6 @@
 package stock_news;
 
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Iterator;
 
@@ -42,7 +36,7 @@ public class Naver_stock {
 //				
 //				System.out.println("============================================================");
 
-				String url = "https://finance.naver.com/news/news_list.nhn?mode=LSS3D&section_id=101&section_id2=258&section_id3=402";
+				String url = "https://news.naver.com/main/list.nhn?mode=LS2D&mid=shm&sid2=731&sid1=105&date=20200815";
 				// 웹에서 내용을 담을 객체 생성
 				Document doc = null;
 				
@@ -54,13 +48,13 @@ public class Naver_stock {
 //				System.out.println(doc);
 				
 				// 웹 내용에서 원하는 내용 추출 코드(해당 쿼리 추출)
-				Elements element = doc.select("ul.realtimeNewsList");
+				Elements element = doc.select("div.list_body.newsflash_body");
 				
 				// 쿼리 확인
 //				System.out.println("Elements : " + element);
 				
 				// 특정 쿼리 내용 가져오기
-				Iterator<Element> iterator = element.select("dd.articleSummary").iterator();
+				Iterator<Element> iterator = element.select("a").iterator();
 				
 				while(iterator.hasNext()) {
 					System.out.println(iterator.next().text());

@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Google 드라이브/MySQL작업/mysql-connector-java-5.1.47.tar/mysql-connector-java-5.1.47/mysql-connector-java-5.1.47-bin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Google 드라이브/문제/크롤링/Stock_program/src/lib/jsoup-1.13.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bang7/Desktop/Programming/Stock_Program/src/lib/jsoup-1.13.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
